@@ -6,7 +6,7 @@ phases:
       - echo "start->lambda_sam_deploy_ts"
   build:
     commands:
-      - sh aws/code_build/lambda_sam_deploy_ts.sh dev # 手順4で作成したshellを実行（引数devを渡す）
+      - sh /aws/code_build/lambda_sam_deploy_ts.sh dev # 手順4で作成したshellを実行（引数devを渡す）
   post_build:
     commands:
       - echo "finish->lambda_sam_deploy_ts"
